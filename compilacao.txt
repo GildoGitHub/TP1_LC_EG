@@ -1,3 +1,5 @@
+INSTRUCOES DE COMPILAÇÃO
+
 gcc -Wextra -Wall -c imple.c
 gcc -Wall -Wextra -c main.c
 

@@ -178,7 +178,7 @@ Byte escolha_cor_letra() {
     printf("**********************************\n");
     printf("Escolha: "); scanf("%d", &opcao);
 
-    while( opcao < 1 && opcao > 2 ) {
+    while( opcao < 1 || opcao > 2 ) {
         printf("Error: Opcao invalida\n");
         printf("Escolha: "); scanf("%d",&opcao);
     }
@@ -206,7 +206,7 @@ Byte escolha_cor_fundo() {
     printf("**********************************\n");
     printf("Escolha: "); scanf("%d", &escolha);
 
-    if(escolha < 1 && escolha > 4) {
+    if(escolha < 1 || escolha > 4) {
         printf("\nA opcao invalida. Tente de novo.\n\n");
 
         return escolha_cor_fundo();
@@ -333,10 +333,10 @@ void print_numero(){
 
     cor_letra = escolha_cor_letra();
 
-    printf("\n");
+    puts("");
     cor_fundo = escolha_cor_fundo();
 
-    printf("\n");
+    puts("");
     posicao = escolha_posicao();
 
     system("cls");
